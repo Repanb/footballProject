@@ -1,86 +1,103 @@
 /* global section */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 /*nav section*/
-header{
+header {
     background-color: #2D25A0;
 }
-nav{
-   max-width: 1160px;
+
+nav {
+    max-width: 1160px;
     position: relative;
     left: 80px;
 }
-.mainNav{
+
+.mainNav {
     width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: baseline
 }
-.mainMene{
+
+.mainMene {
     display: flex;
     justify-content: space-around;
 }
-.navContainer ul li:hover{
+
+.navContainer ul li:hover {
     background-color: #3DBAFD;
 }
-.navContainer li{
+
+.navContainer li {
     list-style: none;
     display: inline-block;
     padding: 8px;
 }
-.navContainer ul li a{
+
+.navContainer ul li a {
     color: white;
     margin: 10px 30px;
     font-weight: 400;
     font-size: 18px;
 }
-.loginButton a{
+
+.loginButton a {
     color: white;
     background-color: crimson;
     font-size: 16px;
     padding: 8px 20px;
 }
+
 /* banner section */
-#topSection{
+#topSection {
     width: 100%;
     padding: 20px 5px;
     margin-bottom: 30px;
 }
-.banner{
+
+.banner {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 20px 0;
 }
-.bannerInfo h1{
+
+.bannerInfo h1 {
     color: white;
     font-size: 64px;
     line-height: 80px;
     margin-bottom: 30px;
 }
-.button a{
+
+.button a {
     background-color: crimson;
     color: white;
     font-size: 16px;
     font-weight: 500;
     padding: 10px 20px;
 }
+
 /*player section*/
-.container, footer{
+.container,
+footer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .players {
     width: 80%;
     display: grid;
@@ -88,9 +105,10 @@ nav{
     grid-gap: 30px;
     padding: 20px;
     box-sizing: border-box;
-    
+
 }
-.player{
+
+.player {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,64 +117,76 @@ nav{
     box-shadow: 1px 1px 10px gray;
     transition: transform 1s;
 }
-.player:hover{
+
+.player:hover {
     transform: scale(1.05);
 
 }
-.player img{
+
+.player img {
     width: 300px;
     height: 256px;
 }
-.playerInfo{
+
+.playerInfo {
     margin: 10px 0;
     overflow: hidden;
 }
-.player h3{
+
+.player h3 {
     font-size: 28px;
     line-height: 40px;
     font-weight: 900;
     padding: 5px 0;
     color: #18191F;
 }
-.player p{
+
+.player p {
     color: gray;
     font-weight: 200;
 }
+
 /*blog section*/
-#blogSection{
+#blogSection {
     max-width: 90%;
     padding: 20px;
     margin: 20px 0;
     position: relative;
     left: 75px;
-    
+
 }
-.blogContent{
+
+.blogContent {
     width: 50%;
     padding: 20px;
     margin: 20px;
     max-height: 445px;
     overflow: hidden
 }
-.blogContent h1{
+
+.blogContent h1 {
     font-size: 48px;
     line-height: 60px;
     margin: 15px 0;
 }
-.blogImage{
+
+.blogImage {
     width: 50%;
     padding: 20px;
     margin: 20px;
 
 }
+
 /*footer section*/
-.footer{
+.footer {
     flex-direction: column
 }
-.footerImage img{
+
+.footerImage img {
     width: 484px;
 }
-.socialIcon a{
+
+.socialIcon a {
     background-color: lightgray;
     display: inline-block;
     font-size: 18px;
@@ -164,7 +194,82 @@ nav{
     margin: 10px 5px;
     border-radius: 50%;
 }
-.copyright{
+
+.copyright {
     margin-bottom: 10px;
 }
+
 /*for mobile*/
+@media only screen and (max-width: 688px) {
+    header {
+        display: none;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .player {
+        padding: 10px;
+    }
+
+    .player img {
+        width: 100%
+    }
+
+    .footerImage img {
+        width: 300px;
+    }
+
+    #blogSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogContent h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .blogImage img {
+        width: 330px;
+        margin-left: 10px
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column
+    }
+
+    #blogSection {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 0;
+    }
+
+    .blogContent {
+        width: 90%;
+        padding: 10px;
+        margin-right: 0;
+        max-height: 445px;
+        overflow: hidden;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .blogImage {
+        width: 90%;
+        padding: 0 30px;
+        margin: 0 20px;
+    }
+
+
+
+}
