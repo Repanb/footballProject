@@ -187,6 +187,22 @@ Blog section
 
 }
 
+/*=============
+Brand Partner
+===============*/
+.brandPartner{
+    margin: 50px;
+    
+}
+.partnerTitle{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.partnerImages{
+    display: flex;
+    justify-content: space-around;
+}
 /*============
 footer
 ============*/
@@ -248,10 +264,6 @@ for mobile
         width: 100%
     }
 
-    .footerImage img {
-        width: 300px;
-    }
-
     #blogSection {
         display: flex;
         flex-direction: column;
@@ -269,7 +281,8 @@ for mobile
 
     .container {
         display: flex;
-        flex-direction: column
+        flex-direction: column;
+        padding: 0 10px;
     }
 
     #blogSection {
@@ -288,14 +301,19 @@ for mobile
         overflow: hidden;
     }
 
-    .container {
-        padding: 0 10px;
-    }
-
     .blogImage {
         width: 90%;
         padding: 0 30px;
         margin: 0 20px;
+    }
+    .partnerTitle h1{
+        font-size: 35px;
+    }
+    .partnerImages img{
+        width: 60px;
+    }
+        .footerImage img {
+        width: 300px;
     }
 }
 
