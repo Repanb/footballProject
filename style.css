@@ -69,7 +69,6 @@ nav {
 
 .banner {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     padding: 20px 0;
 }
@@ -200,9 +199,20 @@ footer {
 }
 
 /*for mobile*/
+
 @media only screen and (max-width: 688px) {
-    header {
+    nav {
         display: none;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .bannerInfo{
+        padding-bottom: 40px;
+    }
+    .bannerImage img{
+        width: 100%;
     }
 
     .players {
@@ -235,7 +245,7 @@ footer {
     }
 
     .blogImage img {
-        width: 330px;
+        width: 300px;
         margin-left: 10px
     }
 
