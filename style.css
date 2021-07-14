@@ -35,19 +35,14 @@ nav {
     align-items: baseline
 }
 
-.mainMene {
-    display: flex;
-    justify-content: space-around;
-}
-
-.navContainer ul li:hover {
-    background-color: #3DBAFD;
-}
-
 .navContainer li {
     list-style: none;
     display: inline-block;
     padding: 8px;
+}
+
+.navContainer ul li:hover {
+    background-color: #3DBAFD;
 }
 
 .navContainer ul li a {
@@ -196,7 +191,7 @@ Blog section
 footer
 ============*/
 .footer {
-    flex-direction: column
+    flex-direction: column;
 }
 
 .footerImage img {
@@ -316,22 +311,24 @@ for Tablet
     }
 
     .mainNav {
-        width: 100%;
-        padding: 5px;
+        justify-content: flex-start;
     }
 
     .navContainer ul li a {
-        margin: 1px 3px;
+        margin: 1px;
     }
+
+    .banner {
+        padding: 30px;
+    }
+
     .players {
         width: 95%;
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    
+
     #blogSection {
         width: 100%;
-        position: relative;
         left: 0;
     }
 
@@ -352,10 +349,4 @@ for Tablet
         width: 100%;
         flex-direction: column;
     }
-
-
-
-
-
-
 }
