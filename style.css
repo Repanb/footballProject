@@ -186,22 +186,26 @@ Blog section
     margin: 20px;
 
 }
-.button{
+
+.button {
     padding: 8px
 }
+
 /*=============
 Brand Partner
 ===============*/
-.brandPartner{
+.brandPartner {
     margin: 50px;
-    
+
 }
-.partnerTitle{
+
+.partnerTitle {
     text-align: center;
     font-size: 35px;
     margin-bottom: 20px;
 }
-.partnerImages{
+
+.partnerImages {
     display: flex;
     justify-content: space-around;
 }
@@ -209,30 +213,36 @@ Brand Partner
 /*============
 newsletter section
 ==================*/
-.newsletterContent{
+.newsletterContent {
+    position: relative;
+    left: 50px;
     background-color: lightblue;
     width: 95%;
     text-align: center;
 }
-.newsLetter h2{
+
+.newsLetter h2 {
     font-size: 50px;
 }
-.newsLetter p{
+
+.newsLetter p {
     font-size: 18px;
     font-weight: 500;
 }
-.newsLetter form{
+
+.newsLetter form {
     display: flex;
     justify-content: center;
     align-items: baseline;
 }
 
-input{
+input {
     padding: 3px 60px;
     margin: 10px 30px;
     font-size: 20px;
 }
-form .button{
+
+form .button {
     background-color: crimson;
     color: white;
     font-size: 16px;
@@ -240,6 +250,7 @@ form .button{
     padding: 6px 40px;
     margin: 10px 30px;
 }
+
 /*============
 footer
 ============*/
@@ -250,7 +261,8 @@ footer
 .footerImage img {
     width: 484px;
 }
-.copyright{
+
+.copyright {
     background-color: #2D25A0;
     font-weight: 400px;
     color: white;
@@ -351,21 +363,35 @@ for mobile
         padding: 0 30px;
         margin: 0 20px;
     }
-    .partnerTitle h1{
+
+    .partnerTitle h1 {
         font-size: 35px;
     }
-    .partnerImages img{
+
+    .partnerImages img {
         width: 60px;
     }
-    input{
-    padding: 3px 20px;
-    margin: 10px 10px;
-}
-.button{
-    padding: 6px 30px;
-    margin: 10px 20px;
-}
-        .footerImage img {
+
+    .newsletterContent {
+        left: 0;
+        width: 100%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    input {
+        padding: 3px 10px;
+        margin: 10px 10px;
+    }
+
+    .button {
+        padding: 6px 10px;
+        margin: 10px 10px;
+    }
+
+    .footerImage img {
         width: 300px;
     }
 }
