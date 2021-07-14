@@ -186,7 +186,9 @@ Blog section
     margin: 20px;
 
 }
-
+.button{
+    padding: 8px
+}
 /*=============
 Brand Partner
 ===============*/
@@ -203,6 +205,41 @@ Brand Partner
     display: flex;
     justify-content: space-around;
 }
+
+/*============
+newsletter section
+==================*/
+.newsletterContent{
+    background-color: lightblue;
+    width: 100%;
+    text-align: center;
+}
+.newsLetter h2{
+    font-size: 50px;
+}
+.newsLetter p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.newsLetter form{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+input{
+    padding: 3px 60px;
+    margin: 10px 30px;
+    font-size: 20px;
+}
+.button{
+    background-color: crimson;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 40px;
+    margin: 10px 30px;
+}
 /*============
 footer
 ============*/
@@ -212,6 +249,14 @@ footer
 
 .footerImage img {
     width: 484px;
+}
+.copyright{
+    background-color: #2D25A0;
+    font-weight: 400px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 .socialIcon a {
