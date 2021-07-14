@@ -1,4 +1,6 @@
-/* global section */
+/*============
+global section
+============*/
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,9 @@ a {
     text-decoration: none;
 }
 
-/*nav section*/
+/*============
+Navbar
+============*/
 header {
     background-color: #2D25A0;
 }
@@ -60,7 +64,9 @@ nav {
     padding: 8px 20px;
 }
 
-/* banner section */
+/*============
+Banner section
+============*/
 #topSection {
     width: 100%;
     padding: 20px 5px;
@@ -88,7 +94,9 @@ nav {
     padding: 10px 20px;
 }
 
-/*player section*/
+/*============
+player section
+============*/
 .container,
 footer {
     width: 100%;
@@ -143,9 +151,13 @@ footer {
 .player p {
     color: gray;
     font-weight: 200;
+    font-size: 16px;
+    line-height: 26px;
 }
 
-/*blog section*/
+/*============
+Blog section
+============*/
 #blogSection {
     max-width: 90%;
     padding: 20px;
@@ -169,6 +181,10 @@ footer {
     margin: 15px 0;
 }
 
+.blogContent p {
+    padding-bottom: 30px;
+}
+
 .blogImage {
     width: 50%;
     padding: 20px;
@@ -176,7 +192,9 @@ footer {
 
 }
 
-/*footer section*/
+/*============
+footer
+============*/
 .footer {
     flex-direction: column
 }
@@ -198,20 +216,25 @@ footer {
     margin-bottom: 10px;
 }
 
-/*for mobile*/
+/*============
+for mobile
+============*/
 
 @media only screen and (max-width: 688px) {
     nav {
         display: none;
     }
-    .banner{
+
+    .banner {
         flex-direction: column;
         padding: 20px;
     }
-    .bannerInfo{
+
+    .bannerInfo {
         padding-bottom: 40px;
     }
-    .bannerImage img{
+
+    .bannerImage img {
         width: 100%;
     }
 
@@ -279,6 +302,59 @@ footer {
         padding: 0 30px;
         margin: 0 20px;
     }
+}
+
+/*============
+for Tablet
+============*/
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    nav {
+        max-width: 990px;
+        position: relative;
+        left: 0;
+        margin-right: 10px;
+    }
+
+    .mainNav {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .navContainer ul li a {
+        margin: 1px 3px;
+    }
+    .players {
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+    #blogSection {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .blogContent {
+        width: 95%;
+        margin: 0;
+    }
+
+    .blogImage {
+        width: 95%;
+    }
+
+    .blogImage img {
+        width: 650px;
+    }
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+
 
 
 
