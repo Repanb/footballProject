@@ -211,7 +211,7 @@ newsletter section
 ==================*/
 .newsletterContent{
     background-color: lightblue;
-    width: 100%;
+    width: 95%;
     text-align: center;
 }
 .newsLetter h2{
@@ -232,7 +232,7 @@ input{
     margin: 10px 30px;
     font-size: 20px;
 }
-.button{
+form .button{
     background-color: crimson;
     color: white;
     font-size: 16px;
@@ -357,6 +357,14 @@ for mobile
     .partnerImages img{
         width: 60px;
     }
+    input{
+    padding: 3px 20px;
+    margin: 10px 10px;
+}
+.button{
+    padding: 6px 30px;
+    margin: 10px 20px;
+}
         .footerImage img {
         width: 300px;
     }
